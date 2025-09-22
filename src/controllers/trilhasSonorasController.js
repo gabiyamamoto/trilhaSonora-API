@@ -30,4 +30,21 @@ const getAllTrilhas = (req, res) => {
     });
 };
 
-export { getAllTrilhas }
+const getTrilhaByld = (req, res) => {
+    const id = parseInt(req.params.id);
+    const trilha = trilhasSonoras.find(t => t.id === id);
+
+    if (!trilha) {
+        res.status(404).json({
+            success: false,
+            message: `Trilha sonora com o id ${id} não existe!`
+        })
+    }
+
+    res.status(200).json({
+        total: trilha.length,
+        data: trilha
+    })
+};
+
+export { getAllTrilhas, getTrilhaByld };

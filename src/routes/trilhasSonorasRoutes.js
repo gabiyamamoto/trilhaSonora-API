@@ -1,8 +1,9 @@
 import express from "express";
-import { getAllTrilhas } from "../controllers/trilhasSonorasController.js";
+import { getAllTrilhas, getTrilhaByld } from "../controllers/trilhasSonorasController.js";
 
 const router = express.Router();
 
 router.get("/", getAllTrilhas);
+router.get("/:id", getTrilhaByld);
 
 export default router;

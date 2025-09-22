@@ -1,6 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
-import trilhasSonorasRoutes from "./src/routes/trilhasSonorasRoutes.js";
+import trilhasSonorasRoutes from "./src/routes/trilhasSonorasRoutes.js"
 
 const app = express();
 app.use(express.json());

@@ -1,19 +1,6 @@
 import dados from "../models/dados.js";
 const { trilhasSonoras } = dados;
 
-const validarTrilha = (trilha) => {
-    const duracaoCadaFaixa = parseInt(trilha.duracao)
-    const duracaoTotal = trilha.faixas * duracaoCadaFaixa;
-
-    if (duracaoTotal) {
-      return "Duração total deve corresponder à soma das faixas individuais";
-    }
-    if (trilha.faixas < 0) {
-      return "Número de faixas deve ser maior que 0";
-    }
-    return null;
-  };
-
 const getAllTrilhas = (req, res) => {
     const { midia, compositor, genero, plataforma } = req.query;
     let resultado = trilhasSonoras;
@@ -39,7 +26,7 @@ const getAllTrilhas = (req, res) => {
 
     res.status(200).json({
         total: resultado.length,
-        trilhas: resultado,
+        data: resultado
     });
 };
 
@@ -88,7 +75,7 @@ const deleteTrilha = (req, res) => {
     const id = parseInt(req.params.id);
 
     if (isNaN(id)) {
-        return res.status(404).json({
+        return res.status(400).json({
             success: false,
             message: "O id deve ser válido!"
         });

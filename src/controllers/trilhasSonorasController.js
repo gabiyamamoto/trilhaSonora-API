@@ -113,4 +113,49 @@ const deleteTrilha = (req, res) => {
     });
 };
 
+const updateTrilha = (req, res) => {
+    const id = parseInt(req.params.id);
+    const { titulo, compositor, midia, genero, faixas, duracao, anoLancamento, plataforma } = req.body;
+
+    if (isNaN(id)) {
+        return res.status(400).json({
+            success: false,
+            message: "O id deve ser um número válido!"
+        });
+    }
+
+    const trilhaExiste = trilhasSonoras.find(trilha => trilha.id === id);
+
+    if (!trilhaExiste) {
+        return res.status(404).json({
+            success: false,
+            message: `A trilha com o id ${id} não existe`
+        });
+    }
+
+    const trilhasAtualizadas = trilhasSonoras.map(trilha => trilha.id === id ? {
+        ...trilha,
+        ...(titulo && {titulo}),
+        ...(compositor && {compositor}),
+        ...(midia && {midia}),
+        ...(genero && {genero}),
+        ...(faixas && {faixas}),
+        ...(duracao && {duracao}),
+        ...(anoLancamento && {anoLancamento}),
+        ...(plataforma && {plataforma})
+    }
+        : trilha
+    );
+
+    trilhasSonoras.splice(0, trilhasSonoras.length, ...trilhasAtualizadas);
+
+    const trilhaAtualizada = trilhasSonoras.find(trilha => trilha.id === id);
+
+    res.status(200).json({
+        success: true,
+        message: "Dados da trilha atualizados com sucesso",
+        trilha: trilhaAtualizada
+    });
+};
+
 export { getAllTrilhas, getTrilhaByld, createTrilha, deleteTrilha, updateTrilha };

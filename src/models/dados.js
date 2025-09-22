@@ -1,105 +1,94 @@
 const trilhasSonoras = [
     {
         "id": "1",
-        "titulo": "The Legend of Zelda: Ocarina of Time",
-        "compositor": "Koji Kondo",
-        "midia": "Videogame",
-        "genero": "Fantasia",
-        "faixas": 82,
-        "duracao": "1h 50min",
-        "anoLancamento": 1998,
-        "plataforma": "Nintendo 64"
+        "titulo": "The Lord of the Rings: The Fellowship of the Ring",
+        "compositor": "Howard Shore",
+        "midia": "Filme",
+        "genero": "Orquestral, Épico",
+        "faixas": 18,
+        "duracao": "1h 11min",
+        "anoLancamento": 2001,
+        "plataforma": ["CD", "Spotify", "Apple Music", "Vinil"]
     },
     {
         "id": "2",
-        "titulo": "Interstellar",
-        "compositor": "Hans Zimmer",
-        "midia": "Filme",
-        "genero": "Ficção Científica",
-        "faixas": 16,
-        "duracao": "1h 17min",
-        "anoLancamento": 2014,
-        "plataforma": "Cinema"
-    },
-    {
-        "id": "3",
-        "titulo": "Game of Thrones",
-        "compositor": "Ramin Djawadi",
-        "midia": "Série de TV",
-        "genero": "Drama Épico",
-        "faixas": 35,
-        "duracao": "1h 15min",
-        "anoLancamento": 2011,
-        "plataforma": "HBO"
-    },
-    {
-        "id": "4",
-        "titulo": "The Last of Us Part II",
-        "compositor": "Gustavo Santaolalla, Mac Quayle",
-        "midia": "Videogame",
-        "genero": "Drama Pós-Apocalíptico",
-        "faixas": 40,
-        "duracao": "1h 37min",
-        "anoLancamento": 2020,
-        "plataforma": "PlayStation 4"
-    },
-    {
-        "id": "5",
-        "titulo": "A Viagem de Chihiro",
-        "compositor": "Joe Hisaishi",
-        "midia": "Animação",
-        "genero": "Fantasia, Aventura",
-        "faixas": 21,
-        "duracao": "1h 01min",
-        "anoLancamento": 2001,
-        "plataforma": "Cinema"
-    },
-    {
-        "id": "6",
-        "titulo": "Blade Runner 2049",
-        "compositor": "Hans Zimmer, Benjamin Wallfisch",
-        "midia": "Filme",
-        "genero": "Ficção Científica, Ambient",
-        "faixas": 24,
-        "duracao": "1h 45min",
-        "anoLancamento": 2017,
-        "plataforma": "Cinema"
-    },
-    {
-        "id": "7",
         "titulo": "Cyberpunk 2077",
         "compositor": "Marcin Przybyłowicz, P.T. Adamczyk, Paul Leonard-Morgan",
         "midia": "Videogame",
-        "genero": "Synthwave, Eletrônica",
+        "genero": "Eletrônico, Synthwave, Industrial",
         "faixas": 50,
         "duracao": "2h 30min",
         "anoLancamento": 2020,
-        "plataforma": "PC, PlayStation 4, Xbox One"
+        "plataforma": ["Spotify", "Apple Music", "YouTube Music"]
+    },
+    {
+        "id": "3",
+        "titulo": "Interstellar",
+        "compositor": "Hans Zimmer",
+        "midia": "Filme",
+        "genero": "Orquestral, Ambient",
+        "faixas": 16,
+        "duracao": "1h 17min",
+        "anoLancamento": 2014,
+        "plataforma": ["Spotify", "Apple Music", "CD", "Vinil"]
+    },
+    {
+        "id": "4",
+        "titulo": "Game of Thrones (Season 1)",
+        "compositor": "Ramin Djawadi",
+        "midia": "Série de TV",
+        "genero": "Fantasia, Orquestral",
+        "faixas": 35,
+        "duracao": "1h 15min",
+        "anoLancamento": 2011,
+        "plataforma": ["Spotify", "Apple Music", "Amazon Music"]
+    },
+    {
+        "id": "5",
+        "titulo": "The Witcher 3: Wild Hunt",
+        "compositor": "Marcin Przybyłowicz, Mikołaj Stroiński",
+        "midia": "Videogame",
+        "genero": "Folk, Orquestral",
+        "faixas": 52,
+        "duracao": "2h 19min",
+        "anoLancamento": 2015,
+        "plataforma": ["Spotify", "Apple Music", "YouTube Music"]
+    },
+    {
+        "id": "6",
+        "titulo": "Howl's Moving Castle",
+        "compositor": "Joe Hisaishi",
+        "midia": "Filme",
+        "genero": "Clássico, Orquestral",
+        "faixas": 30,
+        "duracao": "1h 00min",
+        "anoLancamento": 2004,
+        "plataforma": ["CD", "Spotify", "Apple Music"]
+    },
+    {
+        "id": "7",
+        "titulo": "Dune",
+        "compositor": "Hans Zimmer",
+        "midia": "Filme",
+        "genero": "Ambient, Experimental",
+        "faixas": 22,
+        "duracao": "1h 45min",
+        "anoLancamento": 2021,
+        "plataforma": ["Spotify", "Apple Music", "CD", "Vinil"]
     },
     {
         "id": "8",
-        "titulo": "Guardiões da Galáxia",
-        "compositor": "Tyler Bates",
-        "midia": "Filme",
-        "genero": "Rock, Pop",
-        "faixas": 12,
-        "duracao": "44min",
-        "anoLancamento": 2014,
-        "plataforma": "Cinema"
-    },
-    {
-        "id": "9",
-        "titulo": "Stranger Things",
+        "titulo": "Stranger Things (Season 1)",
         "compositor": "Kyle Dixon, Michael Stein",
         "midia": "Série de TV",
-        "genero": "Synthwave, Horror",
+        "genero": "Synthwave, Eletrônico",
         "faixas": 36,
         "duracao": "1h 26min",
         "anoLancamento": 2016,
-        "plataforma": "Netflix"
+        "plataforma": ["Spotify", "Apple Music", "Vinil"]
     },
     {
-        "id": "10",
+        "id": "9",
         "titulo": "O Senhor dos Anéis: A Sociedade do Anel",
         "compositor": "Howard Shore",
         "midia": "Filme",
@@ -107,7 +96,18 @@ const trilhasSonoras = [
         "faixas": 18,
         "duracao": "1h 11min",
         "anoLancamento": 2001,
-        "plataforma": "Cinema"
+        "plataforma": ["Cinema", "CD", "Spotify"]
+    },
+    {
+        "id": "10",
+        "titulo": "Your Name",
+        "compositor": "RADWIMPS",
+        "midia": "Anime",
+        "genero": "Rock, Pop, Orquestral",
+        "faixas": 27,
+        "duracao": "1h 00min",
+        "anoLancamento": 2016,
+        "plataforma": ["Spotify", "Apple Music"]
     }
 ]
 
